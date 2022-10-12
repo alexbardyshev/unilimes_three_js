@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unilimes Three JS Test</title>
+</head>
+
+<body>
+<form id="formCreateObject">
+    <select name="geometry" required>
+        <option value="cube" selected>Cube</option>
+        <option value="sphere">Sphere</option>
+        <option value="cone">Cone</option>
+    </select>
+
+    <input type="number" min="1" max="25" step="1" name="scale" required>
+
+    <input type="submit" value="Create">
+</form>
+
+<div id="objectsList">
+
+</div>
+
+<canvas id="scene"></canvas>
+
+<script type="importmap">
+        {
+            "imports": {
+                "three": "../build/three.module.js",
+                "three/addons/": "./jsm/"
+            }
+        }
+    </script>
+</body>
+
+</html>
